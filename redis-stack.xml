@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Redis-Stack</Name>
+  <Repository>redis/redis-stack:latest</Repository>
+  <Registry>https://hub.docker.com/r/redis/redis-stack</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support>https://redis.io/about/redis-stack/</Support>
+  <Project>https://redis.io/</Project>
+  <Overview>redis-stack installs a Redis server with additional database capabilities and the RedisInsight.</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:8001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/tatertottterson/unraid_templates/refs/heads/main/redis-stack.xml</TemplateURL>
+  <Icon>https://www.gravatar.com/avatar/d97b18081fdbcb9838acfeaa4335e3d3</Icon>
+  <Config Name="Redis Port" Target="6379" Default="6379" Mode="tcp" Description="Redis Port" Type="Port" Display="always" Required="true" Mask="false">6379</Config>
+  <Config Name="data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redis/data/</Config>
+  <Config Name="Port" Target="8001" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8001</Config>
+  <TailscaleStateDir/>
+</Container>
