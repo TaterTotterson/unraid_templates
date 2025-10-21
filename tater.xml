@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tater</Name>
+  <Repository>ghcr.io/tatertotterson/tater:latest</Repository>
+  <Registry>https://github.com/TaterTotterson/Tater/pkgs/container/tater</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/TaterTotterson/Tater/issues</Support>
+  <Project>https://github.com/TaterTotterson/Tater</Project>
+  <Overview>A Local AI LLM Assistant With Tools and Home Assistant Intergration</Overview>
+  <Category>AI: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8501]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/tatertotterson/unraid_templates/main/tater.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/tatertotterson/Tater/refs/heads/main/images/tater.png</Icon>
+  <Config Name="LLM_HOST" Target="LLM_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">10.4.20.210</Config>
+  <Config Name="LLM_PORT" Target="LLM_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1234</Config>
+  <Config Name="REDIS_HOST" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">10.4.20.173</Config>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">6379</Config>
+  <Config Name="8501" Target="8501" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8501</Config>
+  <Config Name="LLM_MODEL" Target="LLM_MODEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gemma-3-27b-it-abliterated</Config>
+  <Config Name="HA Port" Target="8787" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
+  <Config Name="Auto Port" Target="8788" Default="8788" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8788</Config>
+  <TailscaleStateDir/>
+</Container>
