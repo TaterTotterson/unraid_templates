@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>microWakeWord_Trainer-Nvidia</Name>
+  <Repository>ghcr.io/tatertotterson/microwakeword:latest</Repository>
+  <Registry>https://github.com/TaterTotterson/microWakeWord-Trainer-Nvidia-Docker/pkgs/container/microwakeword</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/TaterTotterson/microWakeWord-Trainer-Nvidia-Docker/issues</Support>
+  <Project>https://github.com/TaterTotterson/microWakeWord-Trainer-Nvidia-Docker</Project>
+  <Overview>Train microWakerWords</Overview>
+  <Category>AI: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8888]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/tatertotterson/MicroWakeWord-Trainer-Docker/refs/heads/main/mmw.png</Icon>
+  <ExtraParams>--gpus all</ExtraParams>
+  <Config Name="Host Path 1" Target="/data" Default="/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mww/</Config>
+  <Config Name="Host Port 1" Target="8888" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <TailscaleStateDir/>
+</Container>
